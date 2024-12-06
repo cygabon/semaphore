@@ -5,7 +5,8 @@
     - name: Send CLI commands to Aruba switch
       aoscx_command:
         commands:
-          - interface 1/1/1
+          - configure terminal
+          - interface 1
           - description "Configured by Ansible"
           - exit
         provider:
